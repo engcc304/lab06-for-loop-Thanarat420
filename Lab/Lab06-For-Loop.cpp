@@ -21,19 +21,19 @@ int main() {
 
     int N,i ;
 
-    printf( "Enter value: " ) ;
+    printf( "Enter value:\n" ) ;
     scanf( "%d",&N ) ;
 
-    if( N % 2 == 1 ){
+    if( N%2 == 1 ){
             printf( "Series: " ) ;
-            for( i=1 ; i<=N ; i=+2 ){
-                printf( "%d",i ) ; 
+            for( i=1 ; i<=N ; i+=2 ){
+                printf( "%d ",i ) ; 
             }
     }
     else{
         printf( "Series: " ) ;
-        for( i=N ; i>=0 ; i=-2 ){
-            printf( "%d",i ) ;
+        for( i=N ; i>=0 ; i-=2 ){
+            printf( "%d ",i ) ;
         }
     }
     //--| YOUR CODE HERE
